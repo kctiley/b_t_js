@@ -174,15 +174,14 @@ Please also write your jquery in a no conflict manner.
             $clickEventLink.toggleClass("clicked");
         });
         // 6
-        //sudo code $.getJSON('json/ajax_return.html') 
+        //sudo code $.getJSON('ajax_return.html') 
         var $jsonResponse = $('#jsonResponse');
         var json ={"Pizza":"Cheese Pizza","Steak":"T-Bone","Fries":"French Fries","Cheese":"Blue Cheese","Cookies":"Peanut Butter"};
         $jsonResponse.append("<ul>")
         for (each in json) {
             $jsonResponse.append("<li>" + each + ": " + json[each] +"</li>");
         }
-        $jsonResponse.append("</ul>")  ;  
-
+        $jsonResponse.append("</ul>");
     })
   </script>
 </body>
